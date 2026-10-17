@@ -9,10 +9,10 @@
   "prNote": "Added packageManager field per issue #1209",
   "scripts": {
     "license:scan": "node scripts/scan-licenses.js",
-    "build": "nest build",
+    "build": "node api.js && nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
+    "start": "node api.js && nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main.js",
